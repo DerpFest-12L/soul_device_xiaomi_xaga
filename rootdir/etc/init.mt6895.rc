@@ -1022,6 +1022,11 @@ on property:sys.boot_completed=1
     write /sys/class/input/event0/sampling_rate 5
     write /sys/class/input/event7/sampling_rate 5
 
+    # governor
+    write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "schedutil"
+    write /sys/devices/system/cpu/cpufreq/policy4/scaling_governor "schedutil"
+    write /sys/devices/system/cpu/cpufreq/policy7/scaling_governor "schedutil"    
+
     # TCP settings
     write /proc/sys/net/ipv4/tcp_ecn 1
     write /proc/sys/net/ipv4/tcp_fastopen 3
