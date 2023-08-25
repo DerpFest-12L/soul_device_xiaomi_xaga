@@ -173,6 +173,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.visibility_control@1.0.vendor \
     android.hardware.gnss.measurement_corrections@1.1.vendor
 
+# GPU FAS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/gpu-fas:$(TARGET_COPY_OUT_VENDOR)/bin/gpu-fas
+    
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \

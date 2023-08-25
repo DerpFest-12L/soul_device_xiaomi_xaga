@@ -1027,6 +1027,22 @@ service remove_package_cache /vendor/bin/remove_package_cache.sh
     seclabel u:r:su:s0
     disabled
     oneshot
+
+    # GPU FAS
+    service gpu_scheduler /vendor/bin/gpu-fas
+    class main
+    user root
+    seclabel u:r:gpu_scheduler:s0
+    group system
+    disabled
+
+on init
+    chmod 0644 /proc/gpufreqv2/fix_target_opp_index
+    chmod 0644 /proc/gpufreqv2/fix_custom_freq_volt
+    chown system system /proc/gpufreqv2/fix_target_opp_index
+    chown system system /proc/gpufreqv2/fix_custom_freq_volt
+    write /proc/gpufreqv2/fix_target_opp_index -1
+    write /proc/gpufreqv2/fix_custom_freq_volt "0 0"
     
 # mount debugfs on user-root
 on property:sys.boot_completed=1 && property:ro.build.type=user && property:ro.debuggable="1"
