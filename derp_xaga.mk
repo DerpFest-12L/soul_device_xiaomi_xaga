@@ -18,24 +18,17 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # ROM Flags
 TARGET_SCREEN_DENSITY := 440
-WITH_GMS := true
-TARGET_CORE_GMS := false
-TARGET_CORE_GMS_EXTRAS := false
-TARGET_USE_GOOGLE_TELEPHONY := false
-TARGET_USE_PIXEL_FINGERPRINT := false
-RISING_CHIPSET := Dimensity 8100
-RISING_MAINTAINER := Priyanshu & Chris
-TARGET_PREBUILT_GCAM := false
-TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_NOT_USES_BLUR := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_DISABLE_EPPE := true
 
 # Inherit some common stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Device identifier
-PRODUCT_NAME := lineage_xaga
+PRODUCT_NAME := derp_xaga
 PRODUCT_DEVICE := xaga
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note11T Pro
