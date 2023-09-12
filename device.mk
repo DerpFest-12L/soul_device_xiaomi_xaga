@@ -422,6 +422,7 @@ BOARD_API_LEVEL := 31
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
+    hardware/mediatek \
     $(LOCAL_PATH)
 
 # Speed profile services and wifi-service to reduce RAM and storage
