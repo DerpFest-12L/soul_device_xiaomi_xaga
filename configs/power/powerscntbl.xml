@@ -149,6 +149,12 @@
         <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="25"></data>
     </scenario>
     <scenario powerhint="INTERACTION">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="1100000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="1100000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_2" param1="1100000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_2" param1="3000000"></data>
         <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="40"></data>
         <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
         <data cmd="PERF_RES_POWERHAL_TOUCH_BOOST_NOTIFY_TOUCH_EVENT" param1="1"></data>
@@ -156,8 +162,8 @@
         <data cmd="PERF_RES_POWERHAL_TOUCH_BOOST_EAS_BOOST" param1="50"></data>
     </scenario>
     <scenario powerhint="EXPENSIVE_RENDERING">
-        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
-        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="2000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="2850000"></data>
         <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
         <data cmd="PERF_RES_FPS_FPSGO_THRM_ENABLE" param1="0"></data>
         <data cmd="PERF_RES_DRAM_OPP_MIN" param1="1"></data>
