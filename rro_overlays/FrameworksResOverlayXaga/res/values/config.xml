@@ -605,7 +605,7 @@
     <bool name="config_supportDoubleTapWake">true</bool>
 
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
-    <bool name="config_zramWriteback">false</bool>  
+    <bool name="config_zramWriteback">true</bool>  
     
     <!-- See AmbientSensor.AmbientColorTemperatureSensor. The ambient color temperature sensor name. -->
     <string name="config_displayWhiteBalanceColorTemperatureSensorName">com.google.sensor.color</string>
