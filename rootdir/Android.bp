@@ -29,6 +29,12 @@ sh_binary {
     vendor: true
 }
 
+sh_binary {
+    name: "remove_package_cache.sh",
+    src: "bin/remove_package_cache.sh",
+    vendor: true,
+}
+
 // Init configuration files
 prebuilt_etc {
     name: "init.batterysecret.rc",
