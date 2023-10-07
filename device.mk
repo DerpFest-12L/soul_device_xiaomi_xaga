@@ -216,7 +216,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.xiaomi_mt6895
+    android.hardware.light-service.xaga
 
 # Lineage Health
 PRODUCT_PACKAGES += \
