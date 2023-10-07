@@ -1,0 +1,4 @@
+type remove_package_cache, domain;
+type remove_package_cache_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(remove_package_cache)

@@ -1020,6 +1020,9 @@ on init
        
     # start gpu ondemand governor
     start ondemand_mtk
+    
+    # start removing package cache
+    start remove_package_cache
 
 service ondemand_mtk /vendor/bin/ondemand_gpu.sh
     class main
@@ -1028,6 +1031,13 @@ service ondemand_mtk /vendor/bin/ondemand_gpu.sh
     disabled
     oneshot
 
+service remove_package_cache /vendor/bin/remove_package_cache.sh
+    class main
+    user root
+    seclabel u:r:su:s0
+    disabled
+    oneshot
+    
 # mount debugfs on user-root
 on property:sys.boot_completed=1 && property:ro.build.type=user && property:ro.debuggable="1"
    mount debugfs debugfs /sys/kernel/debug
