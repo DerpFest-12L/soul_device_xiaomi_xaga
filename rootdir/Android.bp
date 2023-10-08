@@ -30,12 +30,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "ondemand_gpu.sh",
-    src: "bin/ondemand_gpu.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "remove_package_cache.sh",
     src: "bin/remove_package_cache.sh",
     vendor: true,
