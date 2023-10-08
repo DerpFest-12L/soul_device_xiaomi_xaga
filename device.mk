@@ -113,10 +113,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5.vendor \
     android.hardware.camera.provider@2.6.vendor \
 
-# Clear Package Cache
-PRODUCT_PACKAGES += \
-    remove_package_cache.sh
-    
 # Config store
 PRODUCT_PACKAGES += \
     disable_configstore
