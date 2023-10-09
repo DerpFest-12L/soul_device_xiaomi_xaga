@@ -1527,20 +1527,6 @@ vendor/lib64/libstagefrighthw.so
 #system_ext/lib64/libopencl-camera.so
 #system_ext/lib64/vendor.mediatek.hardware.camera.atms@1.0.so
 
-# MiPerf
-vendor/bin/hw/miperf_client
-vendor/bin/hw/vendor.xiaomi.hardware.miperf@1.0-service
-vendor/etc/init/vendor.xiaomi.hardware.miperf@1.0-service.rc
-vendor/etc/miperf_actvity_cfg.xml
-vendor/etc/miperf_app_cfg.xml
-vendor/etc/miperf_contable.xml
-vendor/etc/miperflock_activity_cfg.xml
-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.miperf@1.0.xml
-vendor/lib/hw/vendor.xiaomi.hardware.miperf@1.0-impl.so
-vendor/lib/vendor.xiaomi.hardware.miperf@1.0.so
-vendor/lib64/hw/vendor.xiaomi.hardware.miperf@1.0-impl.so
-vendor/lib64/vendor.xiaomi.hardware.miperf@1.0.so
-
 # MTK-IMS
 -framework/mediatek-common.jar
 -framework/mediatek-framework.jar
